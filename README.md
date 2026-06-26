@@ -4,7 +4,7 @@ A full-stack property rental and booking platform that connects property owners 
 
 ## Live Demo
 
-https://property-renteal-booking-platformcl.vercel.app
+https://assignment-ten-rouge.vercel.app
 
 ---
 
