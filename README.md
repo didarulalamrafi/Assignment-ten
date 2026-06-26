@@ -6,7 +6,7 @@ A full-stack property rental and booking platform that connects property owners 
 
 https://assignment-ten-rouge.vercel.app
 
----
+
 
 ## Features
 
