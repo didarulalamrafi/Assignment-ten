@@ -46,10 +46,9 @@ const Navbar = () => {
   }
 
   return (
-    <div className="sticky top-0 z-50 backdrop-blur-xl bg-gradient-to-r from-cyan-900/80 via-sky-800/80 to-blue-900/80 border-b border-cyan-400/20 shadow-lg">
+    <div className="sticky top-0 z-50 backdrop-blur-xl bg-gradient-to-r from-pink-900/80 via-purple-800/80 to-blue-900/80 border-b border-cyan-400/20 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between text-white">
         <Logo />
-
         {/* CENTER (Desktop) */}
         <ul className="hidden lg:flex gap-6 font-medium">
           {LinksNav}
@@ -124,7 +123,7 @@ const Navbar = () => {
                 </Link>
 
                 <Link href="/register">
-                  <button className="px-4 py-2 bg-cyan-400 text-black rounded-lg hover:bg-cyan-300 transition">
+                  <button className="px-4 py-2 bg-pink-500 text-black rounded-lg hover:bg-pink-300 transition">
                     Register
                   </button>
                 </Link>
@@ -195,7 +194,7 @@ const Navbar = () => {
                           <Dropdown.Item textValue="Login">
                             <Link
                               href="/login"
-                              className="w-full block py-1 font-medium text-cyan-600"
+                              className="w-full block py-1 font-medium text-Purple-600"
                             >
                               Login
                             </Link>
@@ -203,7 +202,7 @@ const Navbar = () => {
                           <Dropdown.Item textValue="Register">
                             <Link
                               href="/register"
-                              className="w-full block py-1 font-medium text-cyan-600"
+                              className="w-full block py-1 font-medium text-purple-600"
                             >
                               Register
                             </Link>
