@@ -1,13 +1,14 @@
 "use client";
 
 import { authClient } from "@/lib/auth-client";
-import { Button, Dropdown } from "@heroui/react";
+import { Button, Dropdown, Menu } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { redirect, usePathname } from "next/navigation";
 import React from "react";
 import { MdMenu } from "react-icons/md";
 import Logo from "./Logo";
+import { Bars } from "@gravity-ui/icons";
 
 const Navbar = () => {
   const pathName = usePathname();
@@ -124,7 +125,7 @@ const Navbar = () => {
 
                 <Link href="/register">
                   <button className="px-4 py-2 bg-cyan-400 text-black rounded-lg hover:bg-cyan-300 transition">
-                    Create Account
+                    Register
                   </button>
                 </Link>
               </div>
@@ -135,9 +136,10 @@ const Navbar = () => {
                   <Button
                     variant="ghost"
                     aria-label="Menu"
-                    className="text-white text-3xl border-cyan-400/40 hover:bg-cyan-500/20"
+                    className="text-white text-5xl font-bold border-cyan-400/40 hover:bg-cyan-500/20"
                   >
-                    Menu
+                    <Bars className="w-7 h-7"></Bars>
+                    {/* <Menu className="text-5xl"></Menu> */}
                   </Button>
 
                   <Dropdown.Popover>
