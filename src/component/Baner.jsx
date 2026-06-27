@@ -1,6 +1,7 @@
 import React from "react";
 import PropertyCard from "./PropertyCard";
 import { getOwnerlimitdata } from "@/lib/owner/ownerget";
+import { motion } from "framer-motion";
 
 const Baner = async () => {
   let allProperty = [];
