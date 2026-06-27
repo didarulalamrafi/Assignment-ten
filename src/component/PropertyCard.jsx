@@ -5,7 +5,6 @@ import { FaMapMarkerAlt, FaArrowRight } from "react-icons/fa";
 export default function PropertyCard({ property }) {
   return (
     <div className="group relative bg-white rounded-2xl shadow-sm hover:shadow-2xl border border-gray-100 hover:border-blue-500/30 transition-all duration-500 transform hover:-translate-y-2 overflow-hidden flex flex-col h-full">
-
       {/* Image Container with Zoom Effect */}
       <div className="relative overflow-hidden aspect-[4/3] w-full">
         <Image
@@ -23,12 +22,13 @@ export default function PropertyCard({ property }) {
       </div>
 
       <div className="p-5 flex flex-col flex-grow justify-between space-y-4">
-
         <div className="space-y-2">
           {/* Location */}
           <div className="flex items-center text-gray-400 text-xs font-medium tracking-wide uppercase gap-1.5">
             <FaMapMarkerAlt className="text-rose-500 shrink-0" />
-            <span className="truncate">{property?.location || "Location N/A"}</span>
+            <span className="truncate">
+              {property?.location || "Location N/A"}
+            </span>
           </div>
 
           {/* Title */}
@@ -40,22 +40,26 @@ export default function PropertyCard({ property }) {
         {/* Rent & Action Section */}
         <div className="pt-2 border-t border-gray-50 flex items-center justify-between gap-2">
           <div>
-            <p className="text-xs text-gray-400 font-medium uppercase tracking-wider">Monthly Rent</p>
+            <p className="text-xs text-gray-400 font-medium uppercase tracking-wider">
+              Monthly Rent
+            </p>
             <p className="text-gray-500 text-sm font-medium">
-              <span className="text-xl font-extrabold text-blue-600">৳{property?.monthlyRent}</span> / mo
+              <span className="text-xl font-extrabold text-blue-600">
+                ৳{property?.monthlyRent}
+              </span>{" "}
+              / mo
             </p>
           </div>
 
           {/* Call to Action Link styled as a modern Button */}
           <Link
             href={`/allProperty/${property?._id}`}
-            className="inline-flex items-center justify-center gap-2  bg-cyan-500 hover:bg-blue-600 text-gray-700 font-medium text-sm px-4 hover:text-white py-2.5 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md hover:shadow-blue-200"
+            className="inline-flex items-center justify-center gap-2  bg-blue-600 hover:bg-pink-900 text-gray-700 font-medium text-sm px-4 hover:text-white py-2.5 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md hover:shadow-blue-200"
           >
             Details
             <FaArrowRight className="text-xs transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </div>
-
       </div>
     </div>
   );
